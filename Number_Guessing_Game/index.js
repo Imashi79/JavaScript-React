@@ -11,13 +11,13 @@ submit.onclick = function(){
     num = Number(num);
     attempt++;
     if(isNaN(num) || num <= 0 || num > 100){
-       label.textContent = "invalid number ! pelase enter valid number";
+       label.textContent = "invalid number ! please enter valid number";
     }
     else if (num < result){
-        label.textContent = "number is high! try again";
+        label.textContent = "number is low! try again";
     }
     else if (num > result){
-        label.textContent = "number is low! try again";
+        label.textContent = "number is high! try again";
     }
     else{
         label.textContent = `congratulations , number is correct. attempts ${attempt}`;
