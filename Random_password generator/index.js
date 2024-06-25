@@ -3,10 +3,6 @@ let lowerletters = false;
 let upperletters = false;
 let num = false;
 let characters = false;
-const radioButtons = document.getElementsByName("groupName");
-for (const radioButton of radioButtons) {
-    radioButton.checked = false;
-}
 
 function create(){
     const pwdlen = document.getElementById("pwdlen").value;
